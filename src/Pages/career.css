@@ -1,0 +1,124 @@
+.career {
+  background-color: #000c2c;
+}
+
+.careers-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  color: #faf9f6;
+}
+
+.careers-container h1 {
+  margin-top: 100px;
+}
+
+.careers-container h1,
+.careers-container h2 {
+  color: #faf9f6;
+  margin-bottom: 20px;
+}
+
+.careers-container p {
+  color: #faf9f6;
+  line-height: 1.6;
+}
+
+.careers-container ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.job-listing {
+  margin-bottom: 30px;
+}
+
+.job-header {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.arrow {
+  margin-right: 10px;
+  font-size: 1.2em;
+}
+
+.job-title {
+  margin: 0;
+  font-weight: bold;
+  color: #faf9f6;
+}
+
+.accordion-content {
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-top: 1px solid #ddd;
+}
+
+.job-listing p {
+  color: #faf9f6;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .careers-container {
+    padding: 10px;
+  }
+
+  .job-listing {
+    padding: 10px;
+  }
+
+  .job-header {
+    align-items: center;
+  }
+
+  .job-title {
+    font-size: 1.2em;
+  }
+
+  .arrow {
+    font-size: 1em;
+  }
+
+  .container .row {
+    flex-direction: column;
+    text-align: center; /* Center the text */
+  }
+
+  .container img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px; /* Space between image and content */
+  }
+
+  .col-8, .col-4 {
+    width: 100%;
+  }
+
+  .apply-btn {
+    display: block;
+    margin: 20px auto; /* Center the button */
+  }
+}
+
+@media (max-width: 576px) {
+  .job-header {
+    padding: 5px;
+  }
+
+  .job-title {
+    font-size: 1em;
+  }
+
+  .arrow {
+    font-size: 0.8em;
+  }
+
+  .accordion-content {
+    padding: 5px;
+  }
+} /* This curly brace was missing or misplaced in the original code */

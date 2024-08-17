@@ -1,0 +1,77 @@
+.team-title {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 30px;
+    padding-bottom: 15px;
+  }
+  
+  .team-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns layout */
+    gap: 16px;
+    justify-content: center;
+   margin: 10px 180px;
+  }
+  
+  .cardt {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    width: 100%; 
+   
+  }
+  
+  .cardt-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  
+  .avatar {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 12px;
+  }
+  
+  .name {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .subtitle {
+    margin: 0;
+    color: gray;
+    font-size: 12px;
+  }
+  
+  .cardt-body {
+    margin-bottom: 16px;
+  }
+  
+  .cardt-body p {
+    margin: 0;
+    color: #333;
+    font-size: 14px;
+  }
+  
+  .cardt-footer {
+    color: gray;
+    font-size: 12px;
+    padding-top: 10px;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .team-container {
+      grid-template-columns: 1fr; /* Single column layout for small screens */
+    }
+    .cardt{
+      padding: 16px;
+      width: 280px; 
+
+    }
+  }
+  

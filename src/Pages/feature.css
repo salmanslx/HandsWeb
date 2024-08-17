@@ -1,0 +1,65 @@
+.features-title {
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 15px;
+    margin-top: 20px;
+  }
+  
+  .card1 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 70px;
+    flex-wrap: wrap;
+    max-width: 900px; 
+    margin: 0 auto; 
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    border-color: #F6F6F6;
+    width: 280px;
+    border-radius: 20px;
+    background-color: white;
+    position: relative;
+  }
+  
+  .card h4 {
+    margin-top: 20px;
+  }
+  
+  .card p {
+    font-size: 15px;
+    padding: 0px 20px;
+  }
+  
+  .circle1 {
+    width: 80px;
+    height: 80px; 
+    margin-top: 10px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../Assets/Ellipse 24.png'); 
+    background-size: cover; 
+    background-position: center; 
+  }
+  
+  .circle1 img {
+    width: 60px;
+    height: 60px;
+    padding: 5px;
+  }
+  
+  @media (max-width: 768px) {
+    .card1 {
+      flex-direction: column;
+      align-items: center;
+      max-width: 100%; 
+    }
+  }
+  

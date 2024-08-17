@@ -1,0 +1,33 @@
+.mainclass .modal-dialog {
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  margin: 0; 
+  height: 100vh; 
+  width: 100vw; 
+  max-width: 100vw; 
+}
+
+.mainclass .modal-content {
+  overflow-y: auto; 
+  max-height: 90vh; 
+}
+
+.custom-modal-header {
+  border-bottom: none; 
+}
+
+.custom-modal-header .modal-title {
+  margin: 0; 
+}
+.faq-number {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+
+@media (max-width: 768px) {
+  .mainclass .modal-dialog {
+      width: 100vw; 
+  }
+}
