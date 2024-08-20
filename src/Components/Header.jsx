@@ -38,37 +38,37 @@ function Header() {
             <div className="collapse navbar-collapse" id="navbarNav">
               <ul className="navbar-nav mx-auto">
                 <li className="nav-item">
-                  <a className="nav-link" href="/" onClick={handleNavLinkClick}>
+                  <a className="nav-link text-light" href="/" onClick={handleNavLinkClick}>
                     HOME
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#about" onClick={handleNavLinkClick}>
+                  <a className="nav-link text-light" href="#about" onClick={handleNavLinkClick}>
                     ABOUT
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#features" onClick={handleNavLinkClick}>
+                  <a className="nav-link text-light" href="#features" onClick={handleNavLinkClick}>
                     FEATURES
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#team" onClick={handleNavLinkClick}>
+                  <a className="nav-link text-light" href="#team" onClick={handleNavLinkClick}>
                     TEAM
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#built" onClick={handleNavLinkClick}>
+                  <a className="nav-link text-light" href="#built" onClick={handleNavLinkClick}>
                     CAREER
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#screens" onClick={handleNavLinkClick}>
+                  <a className="nav-link text-light" href="#screens" onClick={handleNavLinkClick}>
                     SCREENS
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#footer" onClick={handleNavLinkClick}>
+                  <a className="nav-link text-light" href="#footer" onClick={handleNavLinkClick}>
                     CONTACT
                   </a>
                 </li>

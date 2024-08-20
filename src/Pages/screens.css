@@ -1,5 +1,4 @@
 
-
 .content {
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -65,8 +64,8 @@
 
 @media (max-width: 576px) { /* For very small mobile devices */
     .screenshort-item img {
-        width: 30%; /* Adjusted width */
-        height: 240px; /* Adjusted height */
+        width: 40%; /* Adjusted width */
+        height: 285px; /* Adjusted height */
     }
 
     .content {

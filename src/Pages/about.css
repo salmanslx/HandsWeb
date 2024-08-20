@@ -6,6 +6,7 @@
   margin: 10px auto;
   max-width: 800px;
   overflow-y: hidden;
+  color: white;
 }
 
 .image-ab {
@@ -38,7 +39,7 @@
   width: 100%;
   height: auto;
   border-radius: 10px;
-  animation: slideInFromLeft 2s ease-out forwards;
+  animation: slideInFromLeft 7s ease-out forwards;
 }
 
 @keyframes slideInFromLeft {

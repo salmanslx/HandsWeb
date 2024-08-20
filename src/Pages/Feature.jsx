@@ -62,7 +62,7 @@ const featuresData = [
 function Feature() {
   return (
     <div id='features'>
-      <h3 className="features-title fw-bold">Features</h3>
+      <h1 className="features-title fw-bold text-white">Features</h1>
       <div className="card1">
         {featuresData.map((feature, index) => (
           <div className="card" key={index}>

@@ -13,6 +13,7 @@ import Header from './Header';
 import Screens from '../Pages/Screens';
 
 
+
 function Home() {
   return (
     <>
@@ -38,6 +39,7 @@ function Home() {
         <div className='imgcon'>
          <img  src={scrns} alt="" />
         </div>
+        
        
       </div>
        <About/>

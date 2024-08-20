@@ -5,7 +5,7 @@ import frame5 from '../Assets/ph2.png';
 function Download() {
   return (
     <div className="download-container" id='download'>
-      <div className='content'>
+      <div className='content1'>
         <h1>Download Hands App <br /> on iOS and Android <br /> to start connecting <br /> and helping today.</h1><br />
         <div className="button-container">
           <a className="btn dbtn p-2" href="#">

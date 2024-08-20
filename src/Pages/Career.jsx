@@ -71,7 +71,7 @@ const Career = () => {
           <div className="container mt-5">
             <div className="row">
               <div className="col-8">
-                <h4 className='mt-5'>We’re always on the lookout for Creative Influencers!</h4>
+                <h4 className='mt-5 text-dark'>We’re always on the lookout for Creative Influencers!</h4>
                 <p className='text-secondary'>
                   HANDS is more than just an app; it’s a movement. We’re looking for influencers
                   who share our passion for helping people and want to be part of something bigger.

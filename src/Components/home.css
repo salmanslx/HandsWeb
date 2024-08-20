@@ -3,10 +3,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 150px;
+    margin-top: 180px;
     text-align: center; 
     padding: 20px; 
     height: 130vh;
+    color: white;
 }
 
 .home-container h1 {
@@ -30,25 +31,6 @@
     margin-bottom: 15px; 
 }
 
-/* .hbtn {
-    background-color: #000c2c;
-    color: white;
-    border-radius: 5px;
-    text-align: center;
-    font-size: 16px;
-    line-height: 20px;
-    transition: background-color 0.3s ease, font-weight 0.3s ease;
-    white-space: nowrap;
-    overflow: hidden;    
-    text-overflow: ellipsis;
-    padding: 5px 15px;  
-} */
-
-/* .hbtn:hover {
-    font-weight: bold;
-    background-color: #000a1a; 
-    color: white;
-} */
 
 .imgcon {
     display: flex;
@@ -68,7 +50,7 @@
 .imgcon img {
     width: 600px;
     height: 500px;
-    animation: bounceColor 4s infinite ease-in-out;
+    animation: bounceColor 5s infinite ease-in-out;
 }
 
 @keyframes bounceColor {
