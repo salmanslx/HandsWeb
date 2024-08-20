@@ -10,18 +10,19 @@ function Download() {
         <div className="button-container">
           <a className="btn dbtn p-2" href="#">
             <i className="fa-brands fa-apple pe-2 fa-lg"></i>
-           App Store
+            App Store
           </a>
           <a className="btn dbtn p-2" href="#">
             <i className="fa-brands fa-google-play pe-2"></i>
             Google Play
           </a>
-        </div><div className="image-container">
-        <img style={{width:'380px'}} src={frame5} alt="" />
+        </div>
+        <div className="image-container">
+          <img style={{ width: '380px' }} src={frame5} alt="" />
+        </div>
+
       </div>
-        
-      </div>
-      
+
     </div>
   );
 }

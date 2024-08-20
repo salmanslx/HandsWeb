@@ -10,6 +10,8 @@ import Built from '../Pages/Built';
 import Download from '../Pages/Download';
 import Footer from './Footer';
 import Header from './Header';
+import Screens from '../Pages/Screens';
+
 
 function Home() {
   return (
@@ -26,11 +28,11 @@ function Home() {
         <div className="button-container">
           <a className="btn dbtn p-2" href="#">
             <i className="fa-brands fa-apple pe-2 fa-lg"></i>
-            Go to App Store
+           App Store
           </a>
           <a className="btn dbtn p-2" href="#">
             <i className="fa-brands fa-google-play pe-2"></i>
-            Go to Google Play
+            Google Play
           </a>
         </div>
         <div className='imgcon'>
@@ -42,6 +44,7 @@ function Home() {
        <Feature/>
        <Team/>
        <Built/>
+       <Screens/>
        <Download/>
        <Footer/>
        

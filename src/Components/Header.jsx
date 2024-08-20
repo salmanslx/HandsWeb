@@ -63,6 +63,11 @@ function Header() {
                   </a>
                 </li>
                 <li className="nav-item">
+                  <a className="nav-link" href="#screens" onClick={handleNavLinkClick}>
+                    SCREENS
+                  </a>
+                </li>
+                <li className="nav-item">
                   <a className="nav-link" href="#footer" onClick={handleNavLinkClick}>
                     CONTACT
                   </a>

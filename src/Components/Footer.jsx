@@ -87,7 +87,7 @@ const Footer = () => {
             </p>
             <p className="address">
               +3255 456 789<br />
-              info@handsappuae.com
+              <a className='text-light'>info@handsappuae.com</a>
             </p>
 
             {/* Email Subscription Form */}
