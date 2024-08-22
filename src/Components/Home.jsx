@@ -11,6 +11,7 @@ import Download from '../Pages/Download';
 import Footer from './Footer';
 import Header from './Header';
 import Screens from '../Pages/Screens';
+import Blogs from '../Pages/Blogs';
 
 
 
@@ -47,6 +48,7 @@ function Home() {
        <Team/>
        <Built/>
        <Screens/>
+       <Blogs/>
        <Download/>
        <Footer/>
        

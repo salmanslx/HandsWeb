@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import './footer.css';
 import logo from '../Assets/logo (1).png';
-import { FaInstagram, FaFacebookF, FaTwitter, FaLinkedinIn, FaYoutube } from 'react-icons/fa';
+import { FaLinkedin, FaXTwitter } from "react-icons/fa6";
+import { FaInstagram, FaFacebookF, FaTiktok, FaSnapchat, } from 'react-icons/fa';
 import Modals from '../Pages/Modals';
 
 const Footer = () => {
@@ -40,20 +41,23 @@ const Footer = () => {
           </p>
 
           <div className="social-icons">
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/handsappuae?igsh=Y3lxaW1sYjV1cXc3" target="_blank" rel="noopener noreferrer">
               <FaInstagram className="icon" />
             </a>
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.facebook.com/profile.php?id=61559767691065" target="_blank" rel="noopener noreferrer">
               <FaFacebookF className="icon" />
             </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-              <FaTwitter className="icon" />
+            <a href="https://x.com/handsappuae?s=11" target="_blank" rel="noopener noreferrer">
+              <FaXTwitter className="icon" />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-              <FaLinkedinIn className="icon" />
+            <a href="https://www.tiktok.com/@handsappuae?lang=en" target="_blank" rel="noopener noreferrer">
+              <FaTiktok className="icon" />
             </a>
-            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
-              <FaYoutube className="icon" />
+            <a href="https://www.snapchat.com/add/handsappuae" target="_blank" rel="noopener noreferrer">
+              <FaSnapchat className="icon" />
+            </a>
+            <a href="https://www.linkedin.com/in/hands-app-00ab8730a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">
+              <FaLinkedin className="icon" />
             </a>
           </div>
         </div>

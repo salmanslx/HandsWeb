@@ -1,78 +1,42 @@
-
-.content {
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 80px;
+.mainscrn {
     position: relative;
-    z-index: 1;
     width: 100%;
-}
-
-.screenshort-slide-content {
+    overflow: hidden; /* Hide overflow to ensure images don't go out of bounds */
+    height: 700px; /* Adjust as needed */
+  }
+  
+  .scrn-container-wrapper {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    padding: 20px;
+  }
+  
+  .scrn-container {
     display: flex;
-    overflow-x: hidden; /* Hide horizontal scrollbar */
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    height: 300px; /* Adjusted height */
-}
+    width: 100%; /* Total width of all images combined */
+    height: 560px;
+    transition: transform 1s ease-in-out; /* Smooth transition */
 
-.screenshort-slide {
-    display: flex;
-    transition: transform 1s ease; /* Slower sliding effect */
-}
+  }
+  
+  .cards {
+    flex: 0 0 20%; /* Each card takes up 20% of the container width */
+    height:100%; /* Full height of the container */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
 
-.screenshort-item {
-    flex: 0 0 auto;
-    width: calc(100% / 3 - 20px); /* Display 3 images at a time */
-    margin: 10px;
-    transition: transform 1s ease; /* Slower hover effect */
-}
-
-.screenshort-item img {
-    display: block;
-    width: 60%; /* Adjusted width */
-    height: 290px; /* Adjusted height */
-    border-radius: 10px;
-}
-
-/* Responsive Design */
-@media (max-width: 992px) { /* For tablets and medium-sized screens */
-    .screenshort-item {
-        width: calc(100% / 2 - 20px); /* Display 2 images at a time */
-    }
-
-    .screenshort-item img {
-        width: 70%; /* Adjusted width */
-        height: 280px; /* Adjusted height */
-    }
-}
-
-@media (max-width: 768px) { /* For mobile devices */
-    .screenshort-item {
-        width: calc(100% - 20px); /* Display 1 image at a time */
-    }
-
-    .screenshort-item img {
-        width: 80%; /* Adjusted width */
-        height: 260px; /* Adjusted height */
-    }
-
-    .content {
-        padding: 40px; /* Reduce padding on smaller screens */
-    }
-}
-
-@media (max-width: 576px) { /* For very small mobile devices */
-    .screenshort-item img {
-        width: 40%; /* Adjusted width */
-        height: 285px; /* Adjusted height */
-    }
-
-    .content {
-        padding: 20px; /* Further reduce padding on the smallest screens */
-    }
-}
-
-.screenshort-slide::-webkit-scrollbar {
-    display: none; /* Hide the scrollbar */
-}
+  
+  .control-btn.right {
+    right: 0;
+  }
+  
+  /* Add keyframes for the automatic scrolling animation */
+  @keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-80%); } /* Adjust for the number of images */
+  }
+  

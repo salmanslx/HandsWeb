@@ -58,13 +58,13 @@ function Header() {
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link text-light" href="#built" onClick={handleNavLinkClick}>
-                    CAREER
+                  <a className="nav-link text-light" href="#" onClick={handleNavLinkClick}>
+                    PAGES
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link text-light" href="#screens" onClick={handleNavLinkClick}>
-                    SCREENS
+                  <a className="nav-link text-light" href="#built" onClick={handleNavLinkClick}>
+                    CAREER
                   </a>
                 </li>
                 <li className="nav-item">

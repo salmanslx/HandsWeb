@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useState } from 'react';
 import './screens.css';
 import p1 from '../Assets/p1.png';
 import p2 from '../Assets/p2.jpg';
@@ -6,67 +6,52 @@ import p3 from '../Assets/p3.png';
 import p4 from '../Assets/p4.png';
 import p5 from '../Assets/p5.png';
 
+const ScrnData = [
+  { phn: p1 },
+  { phn: p2 },
+  { phn: p3 },
+  { phn: p4 },
+  { phn: p5 },
+];
+
 function Screens() {
-    const scrollRef = useRef(null);
+  const [activeIndex, setActiveIndex] = useState(0); // Start with the first image
 
-    useEffect(() => {
-        const scrollContainer = scrollRef.current;
-        let scrollAmount = 0;
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveIndex((prevIndex) => (prevIndex + 1) % ScrnData.length);
+    }, 3000); // Change image every 3 seconds
 
-        const autoScroll = () => {
-            if (scrollContainer) {
-                scrollAmount += 2;
-                if (scrollAmount >= scrollContainer.scrollWidth - scrollContainer.clientWidth) {
-                    scrollAmount = 0; // Reset scroll when the end is reached
-                }
-                scrollContainer.scrollTo({
-                    left: scrollAmount,
-                    behavior: 'smooth'
-                });
-            }
-        };
+    return () => clearInterval(interval); // Cleanup on component unmount
+  }, []);
 
-        const scrollInterval = setInterval(autoScroll, 50); // Adjust the interval for desired speed
+  useEffect(() => {
+    const container = document.querySelector('.scrn-container');
+    if (container) {
+      const offset = (activeIndex / ScrnData.length) * 1 ;
+      container.style.transform = `translateX(-${offset}%)`;
+    }
+  }, [activeIndex]);
 
-        return () => clearInterval(scrollInterval); // Cleanup on component unmount
-    }, []);
+  
 
-    return (
-        <div className='scrn' id='screens'>
-            <div className='content'>
-                <div className="row">
-                    <div className="col-sm-12">
-                        <div className="section-title">
-                            <h2 className='d-flex justify-content-center fw-bold mb-5'>Beautiful Interface</h2>
-                        </div>
-                    </div>
-                </div>
-                <div className="row">
-                    <div className="col-md-12">
-                        <div ref={scrollRef} className="screenshort-slide-content">
-                            <div className="screenshort-slide d-flex">
-                                <div className="screenshort-item">
-                                    <img src={p1} className="img-fluid" alt="" />
-                                </div>
-                                <div className="screenshort-item">
-                                    <img src={p2} className="img-fluid" alt="" />
-                                </div>
-                                <div className="screenshort-item">
-                                    <img src={p3} className="img-fluid" alt="" />
-                                </div>
-                                <div className="screenshort-item">
-                                    <img src={p4} className="img-fluid" alt="" />
-                                </div>
-                                <div className="screenshort-item">
-                                    <img src={p5} className="img-fluid" alt="" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+  return (
+    <div id='screens' className='mainscrn'>
+      <h1 className="scrn-title fw-bold d-flex justify-content-center mt-5">App Interfaces</h1>
+      <div className="scrn-container-wrapper">
+        <div className="scrn-container">
+          {ScrnData.map((item, index) => (
+            <div
+              className='cards'
+              key={index}
+              style={{ backgroundImage: `url(${item.phn})` }}
+            >
             </div>
+          ))}
         </div>
-    );
+      </div>
+    </div>
+  );
 }
 
 export default Screens;
