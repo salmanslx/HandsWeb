@@ -1,42 +1,39 @@
 .mainscrn {
-    position: relative;
     width: 100%;
-    overflow: hidden; /* Hide overflow to ensure images don't go out of bounds */
-    height: 700px; /* Adjust as needed */
+    overflow: hidden;
+    position: relative;
   }
   
-  .scrn-container-wrapper {
-    position: relative;
+  .slider-container {
     width: 100%;
-    height: 500px;
-    padding: 20px;
-  }
-  
-  .scrn-container {
+    overflow: hidden;
     display: flex;
-    width: 100%; /* Total width of all images combined */
-    height: 560px;
-    transition: transform 1s ease-in-out; /* Smooth transition */
-
+    justify-content: center;
   }
   
-  .cards {
-    flex: 0 0 20%; /* Each card takes up 20% of the container width */
-    height:100%; /* Full height of the container */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  .slider-track {
+    display: flex;
+    animation: scroll 20s linear infinite;
   }
   
+  .slide {
+    min-width: 25%; /* Show 4 images at a time */
+    transition: transform 0.5s ease;
+  }
 
   
-  .control-btn.right {
-    right: 0;
+  .slide img {
+    padding: 50px;
+    width: 100%;
+    border-radius: 10px;
   }
   
-  /* Add keyframes for the automatic scrolling animation */
   @keyframes scroll {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-80%); } /* Adjust for the number of images */
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
   }
   

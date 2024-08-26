@@ -57,11 +57,24 @@ function Header() {
                     TEAM
                   </a>
                 </li>
-                <li className="nav-item">
-                  <a className="nav-link text-light" href="#" onClick={handleNavLinkClick}>
-                    PAGES
-                  </a>
-                </li>
+                <li className="nav-item dropdown d-inline-block"> 
+  <a
+    className="nav-link  text-light"
+    href="#"
+    id="navbarDropdown"
+    role="button"
+    data-bs-toggle="dropdown"
+    aria-expanded="false"
+  >
+    PAGES
+  </a>
+  <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+    <li><a className="dropdown-item" href="#screens">Screens</a></li>
+    <li><a className="dropdown-item" href="#testimonial">Testimonial</a></li>
+    <li><a className="dropdown-item" href="#blogs">Blogs</a></li>
+  </ul>
+</li>
+
                 <li className="nav-item">
                   <a className="nav-link text-light" href="#built" onClick={handleNavLinkClick}>
                     CAREER

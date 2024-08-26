@@ -6,7 +6,7 @@ import './built.css';
 function Built() {
   return (
     <div id='built'>
-      <h3 className="built-title fw-bold">Build Career With Hands</h3>
+      <h3 className="built-title fw-bold">BUILD CAREER WITH HANDS</h3>
       <div className='maindiv'>
         <div className='leftside'>
           <h2>Wanna Join Our Team ?</h2>

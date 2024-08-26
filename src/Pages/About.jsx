@@ -7,7 +7,7 @@ function About() {
     <div className="container-ab " id='about'>
       
       <div className="right-section-ab">
-        <h1 className="title-ab fw-bold mt-5">About</h1>
+        <h1 className="title-ab fw-bold mt-5">ABOUT</h1>
         <p className="description-ab">
           Hands App was born out of a simple idea: to create a platform that brings people
           together through acts of kindness and mutual support. <br /> Our journey began with  a shared vision

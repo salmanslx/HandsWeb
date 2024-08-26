@@ -56,7 +56,7 @@ function Team() {
 
   return (
     <div id='team' className='maintm'>
-      <h1 className="team-title fw-bold d-flex justify-content-center mt-5">Team</h1>
+      <h1 className="team-title fw-bold d-flex justify-content-center mt-5">TEAM</h1>
       <div className="team-container-wrapper">
         <div className="team-container">
           {teamData.map((member, index) => (
