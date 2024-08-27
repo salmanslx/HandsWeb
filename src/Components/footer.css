@@ -148,7 +148,7 @@ background-size: cover;
 }
 
 .email-submit:hover {
-  background-color: #333;
+  background-color: #000000;
 }
 
 @media (max-width: 1024px) {

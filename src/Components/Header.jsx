@@ -70,8 +70,8 @@ function Header() {
   </a>
   <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
     <li><a className="dropdown-item" href="#screens">Screens</a></li>
+    {/* <li><a className="dropdown-item" href="#blogs">Blogs</a></li> */}
     <li><a className="dropdown-item" href="#testimonial">Testimonial</a></li>
-    <li><a className="dropdown-item" href="#blogs">Blogs</a></li>
   </ul>
 </li>
 

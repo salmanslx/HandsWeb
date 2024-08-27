@@ -1,71 +1,86 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import './blogs.css';
+import { useState } from 'react';
 
-const data = [
-  {
-    src: 'https://images.unsplash.com/photo-1502657877623-f66bf489d236',
-    title: 'Night view',
-    description: '4.21M views',
-  },
-  {
-    src: 'https://images.unsplash.com/photo-1527549993586-dff825b37782',
-    title: 'Lake view',
-    description: '4.74M views',
-  },
-  {
-    src: 'https://images.unsplash.com/photo-1532614338840-ab30cf10ed36',
-    title: 'Mountain view',
-    description: '3.98M views',
-  },{
-    src: 'https://images.unsplash.com/photo-1502657877623-f66bf489d236',
-    title: 'Night view',
-    description: '4.21M views',
-  },
-  {
-    src: 'https://images.unsplash.com/photo-1527549993586-dff825b37782',
-    title: 'Lake view',
-    description: '4.74M views',
-  },
-  {
-    src: 'https://images.unsplash.com/photo-1532614338840-ab30cf10ed36',
-    title: 'Mountain view',
-    description: '3.98M views',
-  }
-];
+function Blogs() {
+  const [currentCard, setCurrentCard] = useState(0);
 
-export default function TwoColumnCarousel() {
+  const cards = [
+    {
+      image: 'https://images.unsplash.com/photo-1502657877623-f66bf489d236',
+      title: 'How to Plan and Architect a Project?',
+      content: 'Bringing a website or application from concept to completion can be a complex journey...',
+      date: '2024-08-09',
+      authorImage: 'https://e7.pngegg.com/pngimages/799/987/png-clipart-computer-icons-avatar-icon-design-avatar-heroes-computer-wallpaper-thumbnail.png',
+      authorName: 'Faisal',
+      authorTitle: 'CTO, Co-Founder',
+    },
+    {
+      image: 'https://images.unsplash.com/photo-1527549993586-dff825b37782',
+      title: 'Another Project Planning Guide',
+      content: 'Explore different methodologies to plan your projects effectively...',
+      date: '2024-09-10',
+      authorImage: 'https://e7.pngegg.com/pngimages/799/987/png-clipart-computer-icons-avatar-icon-design-avatar-heroes-computer-wallpaper-thumbnail.png',
+      authorName: 'Jane Doe',
+      authorTitle: 'Project Manager',
+    },
+    {
+      image: 'https://images.unsplash.com/photo-1532614338840-ab30cf10ed36',
+      title: 'Tips for Successful Project Execution',
+      content: 'Learn the secrets to execute your projects with precision and success...',
+      date: '2024-10-11',
+      authorImage: 'https://e7.pngegg.com/pngimages/799/987/png-clipart-computer-icons-avatar-icon-design-avatar-heroes-computer-wallpaper-thumbnail.png',
+      authorName: 'John Smith',
+      authorTitle: 'Lead Developer',
+    },
+  ];
+
+  const handleCardChange = (index) => {
+    setCurrentCard(index);
+  };
+
   return (
-    <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
-      <div className="carousel-inner p-5">
-        {data.map((item, index) => (
-          <div className={`carousel-item ${index === 0 ? 'active' : ''}`} key={item.title}>
-            <div className="container d-flex justify-content-center">
-              <div className="row mb-4">
-                <div className={`col-md-6 ${index % 2 === 0 ? '' : 'order-md-2'}`}>
-                  <img
-                    src={item.src}
-                    className="img-fluid"
-                    alt={item.title}
-                    style={{ maxHeight: '400px', objectFit: 'cover', width: '100%' }}
-                  />
-                </div>
-                <div className="col-md-6 d-flex flex-column justify-content-center">
-                  <h5>{item.title}</h5>
-                  <p>{item.description}</p>
+    <div className="blogs-container" id='blogs'>
+      <h1 className="blogs-title">LATEST BLOGS</h1>
+      <div className="carousel">
+        <div className="cardb">
+          <div className="card-leftb">
+            <img src={cards[currentCard].image} alt="Card" className="card-imageb" />
+          </div>
+          <div className="card-rightb">
+            <div className="card-share">
+              <button className="share-button"><i class="fa-solid fa-share-nodes"></i></button>
+            </div>
+            <div className="card-contentb">
+              <h2>{cards[currentCard].title}</h2>
+              <p>{cards[currentCard].content}</p>
+              <div className="card-footerb">
+                <span>📅 {cards[currentCard].date}</span>
+                <div className="author-info">
+                  <img src={cards[currentCard].authorImage} alt="Author" className="author-image" />
+                  <div>
+                    {cards[currentCard].authorName}<br />
+                    <small>{cards[currentCard].authorTitle}</small>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        ))}
+        </div>
+        <div className="carousel-buttons">
+          {cards.map((_, index) => (
+            <button
+              key={index}
+              className={`carousel-button ${currentCard === index ? 'active' : ''}`}
+              onClick={() => handleCardChange(index)}
+            >
+              {currentCard === index ? '•' : '◦'}
+            </button>
+          ))}
+        </div>
       </div>
-      <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span className="visually-hidden">Previous</span>
-      </button>
-      <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-        <span className="carousel-control-next-icon" aria-hidden="true"></span>
-        <span className="visually-hidden">Next</span>
-      </button>
     </div>
   );
 }
+
+export default Blogs;
