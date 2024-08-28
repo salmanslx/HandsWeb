@@ -1,6 +1,6 @@
 import React from 'react';
 import './about.css';
-import image from '../Assets/Frame 4.png';
+import image from '../Assets/p1.png';
 
 function About() {
   return (
@@ -15,10 +15,10 @@ function About() {
           empowered to help and be helped.
         </p>
         
-        {/* <div className="stats">
-          <div className="stat">200,000+<br />Over 200,000 users in 1 day of release</div>
-          <div className="stat">25,000+<br />Positive feedback in the first week of release</div>
-        </div> */}
+        <div className="stats">
+          <div className="stat"><h5>MISSION</h5><br />To empower individuals within the UAE community by facilitating connections, fostering mutual support, and promoting a culture of kindness and collaboration through our innovative platform.</div>
+          <div className="stat"><h5>VISION</h5><br />To create thriving, interconnected communities across the UAE where every individual feels empowered to offer help, seek assistance, and contribute positively to the well-being and growth of their neighborhood.</div>
+        </div>
       </div>
       <div className="left-section-ab mt-3">
         <img className="image-ab" src={image} alt="App Screenshot" />

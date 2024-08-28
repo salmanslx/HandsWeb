@@ -3,6 +3,12 @@ import './team.css';
 
 const teamData = [
   {
+    name: 'Hamid',
+    subtitle: 'Chief Operating Officer (COO)',
+    description: 'A must-have app for everyone looking to simplify their life.',
+    avatar: 'https://img.freepik.com/premium-photo/hyperrealistische-3d-cartoon-personage-rendering-en-animatie_899449-104985.jpg'
+  },
+  {
     name: 'Abu Saif',
     subtitle: 'Founder & CEO',
     description: 'The app allows you to dull the pain of losing your wife and dog',
@@ -15,18 +21,6 @@ const teamData = [
     avatar: 'https://img.freepik.com/free-photo/view-3d-businessman_23-2150709814.jpg?size=338&ext=jpg&ga=GA1.1.2008272138.1724112000&semt=ais_hybrid'
   },
   {
-    name: 'Hamid',
-    subtitle: 'Chief Operating Officer (COO)',
-    description: 'A must-have app for everyone looking to simplify their life.',
-    avatar: 'https://img.freepik.com/premium-photo/hyperrealistische-3d-cartoon-personage-rendering-en-animatie_899449-104985.jpg'
-  },
-  {
-    name: 'Salman',
-    subtitle: 'Chief Operating Officer (COO)',
-    description: 'A must-have app for everyone looking to simplify their life.',
-    avatar: 'https://img.freepik.com/free-photo/3d-portrait-people_23-2150793852.jpg'
-  },
-  {
     name: 'Thowsif',
     subtitle: 'Chief Operating Officer (COO)',
     description: 'A must-have app for everyone looking to simplify their life.',
@@ -37,6 +31,12 @@ const teamData = [
     subtitle: 'Chief Operating Officer (COO)',
     description: 'A must-have app for everyone looking to simplify their life.',
     avatar: 'https://img.freepik.com/free-photo/cartoon-man-wearing-glasses_23-2151136786.jpg'
+  },
+  {
+    name: 'Salman',
+    subtitle: 'Chief Operating Officer (COO)',
+    description: 'A must-have app for everyone looking to simplify their life.',
+    avatar: 'https://img.freepik.com/free-photo/3d-portrait-people_23-2150793852.jpg'
   }
 ];
 

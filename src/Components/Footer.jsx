@@ -66,12 +66,13 @@ const Footer = () => {
           <div className="menu">
             <h4 className="menu-title">Menu</h4>
             <ul className="menu-list">
-              <li className="menu-item">Home</li>
-              <li className="menu-item">About</li>
-              <li className="menu-item">Features </li>
-              <li className="menu-item">Team</li>
-              <li className="menu-item">Career</li>
-              <li className="menu-item">Contact</li>
+              <a href='#'><li className="menu-item" >Home</li></a>
+              <a href='#about'><li className="menu-item">About</li></a>
+              <a href='#features'><li className="menu-item">Features </li></a>
+              <a href='#team'><li className="menu-item">Team</li></a>
+              <a href='#screens'><li className="menu-item">Screens</li></a>
+              <a href='#testimonial'><li className="menu-item">Testimonial</li></a>
+              <a href='#built'><li className="menu-item">Career</li></a>
             </ul>
           </div>
           <div className="utility-pages">
@@ -86,14 +87,13 @@ const Footer = () => {
           <div className="address-section">
             <h4 className="menu-title">Address</h4>
             <p className="address">
-              1700 W Blancke St, Kiev<br />
-              Port South USA, America
+            Gate Tower 2, 156,<br />
+            Rabat street, Abu Dhabi
             </p>
             <p className="address">
               +3255 456 789<br />
-              <a className='text-light'>info@handsappuae.com</a>
-            </p>
-
+              <a href="mailto:info@handsappuae.com" className="text-light">info@handsappuae.com</a>
+              </p>
             {/* Email Subscription Form */}
             <form onSubmit={handleEmailSubmit} className="email-form">
               <input
@@ -110,7 +110,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="copyright">
-        Copyright © HANDSAPPUAE
+        Copyright © HANDSAPPUAE 2024
       </div>
 
       <Modals show={showModal} handleClose={handleCloseModal} modalType={modalType} />

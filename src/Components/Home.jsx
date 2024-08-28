@@ -1,7 +1,5 @@
 import React from 'react';
 import './home.css';
-
-
 import scrns from '../Assets/scrns.png'
 import About from '../Pages/About';
 import Feature from '../Pages/Feature';

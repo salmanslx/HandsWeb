@@ -43,7 +43,7 @@ background-size: cover;
 
 .line {
   border-left: 2px solid #4a4a4a;
-  height: 250px;
+  height: 260px;
   margin-top: 60px;
   display: block;
   padding: 00px 10px;
@@ -97,20 +97,18 @@ background-size: cover;
   margin-bottom: 8px;
   cursor: pointer;
 }
+.menu-list a{
+  text-decoration: none;
+  color: #fff;
 
+}
 .address {
   font-size: 14px;
   margin-bottom: 8px;
-}
-
-.quote-button {
-  background-color: #000c2c;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
   cursor: pointer;
 }
+
+
 
 .copyright {
   text-align: center;

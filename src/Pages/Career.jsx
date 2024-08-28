@@ -50,7 +50,7 @@ const Career = () => {
           <section className="open-positions mt-5">
             <h2>Current Openings</h2>
             {jobListings.map((job, index) => (
-              <div key={index} className="job-listing bg-secondary rounded">
+              <div key={index} className="job-listing bg-dark rounded">
                 <div className="job-header" onClick={() => toggleAccordion(index)}>
                   <span className="arrow">-</span>
                   <h4 className="job-title">{job.title}</h4>

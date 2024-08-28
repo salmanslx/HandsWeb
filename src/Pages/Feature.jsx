@@ -12,16 +12,16 @@ import f9 from '../Assets/f9.png';
 
 
 const featuresData = [
-  {
-    title: 'Mission',
-    description: 'To empower individuals within the UAE community by facilitating connections, fostering mutual support, and promoting a culture of kindness and collaboration through our innovative platform.',
-    imgSrc: f1
-  },
-  {
-    title: 'Vision ',
-    description: 'To create thriving, interconnected communities across the UAE where every individual feels empowered to offer help, seek assistance, and contribute positively to the well-being and growth of their neighborhood.',
-    imgSrc: f2
-  },
+  // {
+  //   title: 'Mission',
+  //   description: 'To empower individuals within the UAE community by facilitating connections, fostering mutual support, and promoting a culture of kindness and collaboration through our innovative platform.',
+  //   imgSrc: f1
+  // },
+  // {
+  //   title: 'Vision ',
+  //   description: 'To create thriving, interconnected communities across the UAE where every individual feels empowered to offer help, seek assistance, and contribute positively to the well-being and growth of their neighborhood.',
+  //   imgSrc: f2
+  // },
   {
     title: 'Request Assistance',
     description: 'Users can post requests for various types of help, such as running errands,household tasks, transportation, and more.Requests are visible to nearby users who can respond and offer their support.',
