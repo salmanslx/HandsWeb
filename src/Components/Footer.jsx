@@ -73,6 +73,7 @@ const Footer = () => {
               <a href='#screens'><li className="menu-item">Screens</li></a>
               <a href='#testimonial'><li className="menu-item">Testimonial</li></a>
               <a href='#built'><li className="menu-item">Career</li></a>
+              <a href='#contact'><li className="menu-item">Contact</li></a>
             </ul>
           </div>
           <div className="utility-pages">

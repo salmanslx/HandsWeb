@@ -81,7 +81,7 @@ function Header() {
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link text-light" href="#footer" onClick={handleNavLinkClick}>
+                  <a className="nav-link text-light" href="#contact" onClick={handleNavLinkClick}>
                     CONTACT
                   </a>
                 </li>

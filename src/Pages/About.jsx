@@ -1,6 +1,6 @@
 import React from 'react';
 import './about.css';
-import image from '../Assets/p1.png';
+import image from '../Assets/pph.png';
 
 function About() {
   return (
@@ -23,6 +23,7 @@ function About() {
       <div className="left-section-ab mt-3">
         <img className="image-ab" src={image} alt="App Screenshot" />
       </div>
+      
     </div>
   );
 }

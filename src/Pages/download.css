@@ -1,65 +1,91 @@
 .download-container {
-    display: flex;
-    align-items: flex-start;
-    padding: 10px;
-    position: relative;
-    margin: 30px 200px;
+  display: flex;
+  align-items: flex-start;
+  padding: 10px;
+  position: relative;
+  margin: 30px 200px;
+}
+
+.content1 {
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  background-color: white;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+
+.image-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40%;
+  height: auto;
+  z-index: 0;
+  margin-top: 30px;
+}
+
+.image-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Tablet screens (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .download-container {
+    margin: 30px 50px;
   }
-  
-  .content1 {
-    border: 1px solid #ddd;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 80px;
-    background-color: white;
-    position: relative;
-    z-index: 1;
-    width: 100%;
-  }
-  
+
   .image-container {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 40%;
-    height: auto;
-    z-index: 0;
-    margin-top: 30px;
+    width: 50%;
   }
-  
-  .image-container img {
-    display: block;
+}
+
+/* Small screens and mobile devices (max-width: 768px) */
+@media (max-width: 768px) {
+  .download-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 30px 20px;
+  }
+
+  .content1 {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .image-container {
+    width: 70%;
+    margin-bottom: 20px;
+    position: static;
+  }
+
+  .button-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    margin-bottom: 10px;
+  }
+}
+
+/* Extra small screens (max-width: 576px) */
+@media (max-width: 576px) {
+  .download-container {
+    margin: 20px 10px;
+  }
+
+  .content1 {
+    padding: 15px;
+    width: 95%;
+  }
+
+  .image-container {
     width: 100%;
-    height: auto;
   }
-  
-  @media (max-width: 768px) {
-    .download-container {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      margin: 30px 0;
-    }
-  
-    .content1 {
-      width: 90%;
-      padding: 20px;
-    }
-  
-    .image-container {
-      width: 80%;
-      margin-bottom: 20px;
-      position: static;
-      
-    }
-  
-    .button-container {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .btn {
-      margin-bottom: 10px;
-    }
-  }
-  
+}

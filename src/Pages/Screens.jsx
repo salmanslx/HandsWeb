@@ -1,7 +1,7 @@
 import React from 'react';
 import './screens.css';
 import p1 from '../Assets/p1.png';
-import p2 from '../Assets/p2.jpg';
+import p2 from '../Assets/p2.png';
 import p3 from '../Assets/p3.png';
 import p4 from '../Assets/p4.png';
 import p5 from '../Assets/p5.png';

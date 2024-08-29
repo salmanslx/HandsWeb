@@ -11,6 +11,7 @@ import Header from './Header';
 import Screens from '../Pages/Screens';
 // import Blogs from '../Pages/Blogs';
 import Testimonial from '../Pages/Testimonial';
+import Contact from '../Pages/Contact';
 
 
 
@@ -50,6 +51,7 @@ function Home() {
        {/* <Blogs/> */}
        <Testimonial/>
        <Download/>
+       <Contact/>
        <Footer/>
        
     </>
