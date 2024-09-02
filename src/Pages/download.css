@@ -34,15 +34,46 @@
 }
 
 /* Tablet screens (max-width: 1024px) */
-@media (max-width: 1024px) {
+
+
+@media (max-width: 2560px) {
   .download-container {
-    margin: 30px 50px;
+    margin: 30px 700px;
   }
 
   .image-container {
-    width: 50%;
+    width: 30%;
   }
 }
+
+
+@media (max-width: 1440px) {
+  .download-container {
+    margin: 30px 50px;
+  }
+  .content1 {
+    width: 100%;
+    padding: 50px;
+  }
+  .image-container {
+    width: 28%;
+  }
+}
+
+@media (max-width: 1728px) {
+  .download-container {
+    margin: 30px 200px;
+  }
+  .content1 {
+    width: 100%;
+    padding: 80px;
+  }
+  .image-container {
+    width: 30%;
+  }
+}
+
+
 
 /* Small screens and mobile devices (max-width: 768px) */
 @media (max-width: 768px) {
@@ -89,3 +120,4 @@
     width: 100%;
   }
 }
+

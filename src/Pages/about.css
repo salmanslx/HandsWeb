@@ -37,11 +37,9 @@
 
 .image-ab {
   width: 35vh;
-  border: 3px solid rgb(0, 0, 0);
   margin-top: 80px;
   margin-left: 20px;
   height: auto;
-  border-radius: 27px;
   animation: slideInFromLeft 5s ease-out forwards;
 }
 
@@ -102,6 +100,23 @@
     margin: 1 auto;
     border: none;
     
+  }
+}
+@media (max-width: 1728px){
+  .image-ab {
+    width: 180px;
+    margin: 1 auto;
+    border: none;
+    
+  }
+  .stat {
+    font-size: 15px;
+    background-color: hsla(0, 16%, 93%, 0.3);
+    justify-content: space-between;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    margin-right: 20px;
   }
 
 }

@@ -114,5 +114,24 @@
     .imgcon img {
       max-width: 450px;
     }
+    @media (max-width: 1728px) {
+    .home-container {
+      margin-top: 100px;
+    }
+    .home-container h1 {
+      font-size: 36px;
+    }
+    .home-container p {
+      font-size: 15px;
+    }
+    .button-container {
+      flex-direction: column;
+    }
+    .imgcon {
+      max-width: 450px;
+    }
+    .imgcon img {
+      max-width: 450px;
+    }
   }
-  
+}
