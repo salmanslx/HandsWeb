@@ -88,15 +88,14 @@ function Header() {
                   </a>
                 </li>
               </ul>
-              
-            </div>
-          </>
-        )}
-        <div className="d-flex">
+              <div className="d-flex">
                 <button className="btn ms-3 dbtn p-2" onClick={toggleLanguage}>
                   {language === 'en' ? 'Arabic' : 'English'}
                 </button>
               </div>
+            </div>
+          </>
+        )}
       </div>
     </nav>
   );
