@@ -1,3 +1,27 @@
+/* Common styles for both LTR and RTL */
+.navbar {
+    direction: ltr; /* Default direction */
+  }
+  
+  /* Apply RTL direction if class 'rtl' is present */
+  .rtl .navbar {
+    direction: rtl;
+  }
+  
+  /* Adjust other styles as needed for RTL layout */
+  .rtl .navbar-nav {
+    text-align: right;
+  }
+  
+
+  
+  .rtl .dropdown-menu {
+    right: 0;
+    left: auto;
+  }
+  
+
+
 .navbar {
     position: fixed;
     top: 0;
@@ -117,6 +141,26 @@
     background-color: transparent;
 }
 
+/* Responsive styles */
+@media (max-width: 1024px) {
+    .navbar {
+        margin: 20px 40px;
+        padding: 10px 0;
+    }
+
+    .navbar-nav {
+        justify-content: space-around;
+    }
+
+    .nav-item {
+        margin: 0 10px;
+    }
+
+    .logo-img {
+        height: 45px;
+    }
+}
+
 @media (max-width: 768px) {
     .navbar {
         margin: 15px 10px;
@@ -140,4 +184,3 @@
         margin-left: 5px;
     }
 }
-

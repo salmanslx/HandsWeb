@@ -2,13 +2,15 @@ import React, { useState } from 'react';
 import './footer.css';
 import logo from '../Assets/logo (1).png';
 import { FaLinkedin, FaXTwitter } from "react-icons/fa6";
-import { FaInstagram, FaFacebookF, FaTiktok, FaSnapchat, } from 'react-icons/fa';
+import { FaInstagram, FaFacebookF, FaTiktok, FaSnapchat } from 'react-icons/fa';
 import Modals from '../Pages/Modals';
+import { useLanguage } from '../Components/LanguageContext';
 
 const Footer = () => {
   const [showModal, setShowModal] = useState(false);
   const [modalType, setModalType] = useState('');
   const [email, setEmail] = useState('');
+  const { language } = useLanguage();
 
   const handleShowModal = (type) => {
     setModalType(type);
@@ -20,24 +22,36 @@ const Footer = () => {
   const handleEmailChange = (e) => setEmail(e.target.value);
   const handleEmailSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission, e.g., send the email to the server
     console.log('Email submitted:', email);
     setEmail('');
   };
 
   return (
-    <footer className="footer" id='footer'>
+    <footer className={`footer ${language === 'ar' ? 'rtl' : ''}`} id='footer'>
       <div className="footer-content">
         <div className="left-section-ft">
           <div className='d-flex'>
             <img src={logo} alt="Logo" />
-            <h2 className="title-ft">HANDS APP</h2>
+            <h2 className="title-ft">{language == 'ar' ? (
+              <>
+              تطبيق الأيدي
+              </>
+             
+            ):(<>HANDS APP</>)}</h2>
           </div>
           <p className="description-ft">
-            Hands App was born out of a simple idea: to create a platform that brings people
-            together through acts of kindness and mutual support. <br /> Our journey began with a shared vision
-            of fostering stronger, more connected communities in the UAE, where everyone feels
-            empowered to help and be helped.
+            {language === 'ar' ? (
+              <>
+                تم إنشاء تطبيق الأيدي من فكرة بسيطة: إنشاء منصة تجمع الناس من خلال أعمال الخير والدعم المتبادل. <br />
+                بدأت رحلتنا برؤية مشتركة لتعزيز مجتمعات أقوى وأكثر ترابطًا في الإمارات العربية المتحدة، حيث يشعر الجميع
+                بالتمكين لمساعدة الآخرين وتلقي المساعدة.
+              </>
+            ) : (
+              <>
+                Hands App was born out of a simple idea: to create a platform that brings people together through acts of kindness and mutual support. <br />
+                Our journey began with a shared vision of fostering stronger, more connected communities in the UAE, where everyone feels empowered to help and be helped.
+              </>
+            )}
           </p>
 
           <div className="social-icons">
@@ -64,54 +78,54 @@ const Footer = () => {
         <div className='line'></div>
         <div className="right-section">
           <div className="menu">
-            <h4 className="menu-title">Menu</h4>
+            <h4 className="menu-title">{language === 'ar' ? 'القائمة' : 'Menu'}</h4>
             <ul className="menu-list">
-              <a href='#'><li className="menu-item" >Home</li></a>
-              <a href='#about'><li className="menu-item">About</li></a>
-              <a href='#features'><li className="menu-item">Features </li></a>
-              <a href='#team'><li className="menu-item">Team</li></a>
-              <a href='#screens'><li className="menu-item">Screens</li></a>
-              <a href='#testimonial'><li className="menu-item">Testimonial</li></a>
-              <a href='#built'><li className="menu-item">Career</li></a>
-              <a href='#contact'><li className="menu-item">Contact</li></a>
+              <a href='#'><li className="menu-item">{language === 'ar' ? 'الرئيسية' : 'Home'}</li></a>
+              <a href='#about'><li className="menu-item">{language === 'ar' ? 'حول' : 'About'}</li></a>
+              <a href='#features'><li className="menu-item">{language === 'ar' ? 'الميزات' : 'Features'}</li></a>
+              <a href='#team'><li className="menu-item">{language === 'ar' ? 'الفريق' : 'Team'}</li></a>
+              <a href='#screens'><li className="menu-item">{language === 'ar' ? 'الشاشات' : 'Screens'}</li></a>
+              <a href='#testimonial'><li className="menu-item">{language === 'ar' ? 'التوصيات' : 'Testimonial'}</li></a>
+              <a href='#built'><li className="menu-item">{language === 'ar' ? 'المهنة' : 'Career'}</li></a>
+              <a href='#contact'><li className="menu-item">{language === 'ar' ? 'اتصل بنا' : 'Contact'}</li></a>
             </ul>
           </div>
           <div className="utility-pages">
-            <h4 className="menu-title">Utility pages</h4>
+            <h4 className="menu-title">{language === 'ar' ? 'الصفحات الفرعية' : 'Utility pages'}</h4>
             <ul className="menu-list">
-              <li className="menu-item" onClick={() => handleShowModal('terms')}>Terms & Condition</li>
-              <li className="menu-item" onClick={() => handleShowModal('privacy')}>Privacy Policy</li>
-              <li className="menu-item" onClick={() => handleShowModal('howToUse')}>Terms of Use</li>
-              <li className="menu-item" onClick={() => handleShowModal('faq')}>FAQ</li>
+              <li className="menu-item" onClick={() => handleShowModal('terms')}>{language === 'ar' ? 'الشروط والأحكام' : 'Terms & Condition'}</li>
+              <li className="menu-item" onClick={() => handleShowModal('privacy')}>{language === 'ar' ? 'سياسة الخصوصية' : 'Privacy Policy'}</li>
+              <li className="menu-item" onClick={() => handleShowModal('howToUse')}>{language === 'ar' ? 'شروط الاستخدام' : 'Terms of Use'}</li>
+              <li className="menu-item" onClick={() => handleShowModal('faq')}>{language === 'ar' ? 'الأسئلة الشائعة' : 'FAQ'}</li>
             </ul>
           </div>
           <div className="address-section">
-            <h4 className="menu-title">Address</h4>
+            <h4 className="menu-title">{language === 'ar' ? 'العنوان' : 'Address'}</h4>
             <p className="address">
-            Gate Tower 2, 156,<br />
-            Rabat street, Abu Dhabi
+              {language === 'ar' ? 'بوابة برج 2، 156،' : 'Gate Tower 2, 156,'}<br />
+              {language === 'ar' ? 'شارع الرباط، أبو ظبي' : 'Rabat street, Abu Dhabi'}
             </p>
             <p className="address">
-              +3255 456 789<br />
+              {language === 'ar' ? '+3255 456 789' : '+3255 456 789'}<br />
               <a href="mailto:info@handsappuae.com" className="text-light">info@handsappuae.com</a>
-              </p>
+            </p>
             {/* Email Subscription Form */}
             <form onSubmit={handleEmailSubmit} className="email-form">
               <input
                 type="email"
                 value={email}
                 onChange={handleEmailChange}
-                placeholder="Enter your email"
+                placeholder={language === 'ar' ? 'أدخل بريدك الإلكتروني' : 'Enter your email'}
                 className="email-input"
                 required
               />
-              <button type="submit" className="email-submit">Subscribe</button>
+              <button type="submit" className="email-submit">{language === 'ar' ? 'اشتراك' : 'Subscribe'}</button>
             </form>
           </div>
         </div>
       </div>
       <div className="copyright">
-        Copyright © HANDSAPPUAE 2024
+        {language === 'ar' ? 'حقوق النشر © HANDSAPPUAE 2024' : 'Copyright © HANDSAPPUAE 2024'}
       </div>
 
       <Modals show={showModal} handleClose={handleCloseModal} modalType={modalType} />

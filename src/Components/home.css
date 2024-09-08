@@ -1,3 +1,21 @@
+.rtl i {
+  padding: 5px;
+}
+
+.home-container.ltr {
+  direction: ltr;
+}
+
+.home-container.rtl {
+  direction: rtl;
+}
+
+.home-container .button-container {
+  text-align: center; /* Adjust as needed */
+}
+
+
+
 .home-container {
     display: flex;
     flex-direction: column;
@@ -48,6 +66,7 @@
     height: auto;
     animation: bounceColor 5s infinite ease-in-out;
   }
+  
   
   @keyframes bounceColor {
     0% {

@@ -5,11 +5,16 @@ import p2 from '../Assets/p2.png';
 import p3 from '../Assets/p3.png';
 import p4 from '../Assets/p4.png';
 import p5 from '../Assets/p5.png';
+import { useLanguage } from '../Components/LanguageContext';
 
 function Screens() {
+  const { language } = useLanguage();
+
   return (
-    <div className='mainscrn' id='screens'>
-        <h2 className="fw-bold  d-flex justify-content-center mt-5">BEAUTIFUL INTERFACES</h2>
+    <div className={`mainscrn ${language === 'ar' ? 'rtl' : ''}`} id='screens'>
+      <h2 className="fw-bold d-flex justify-content-center mt-5">
+        {language === 'ar' ? 'واجهات جميلة' : 'BEAUTIFUL INTERFACES'}
+      </h2>
       <div className="slider-container">
         <div className="slider-track">
           <div className="slide">

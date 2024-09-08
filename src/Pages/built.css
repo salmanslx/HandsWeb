@@ -1,79 +1,89 @@
 .built-title {
   text-align: center;
-    margin-top: 40px;
-    font-size: 30px;
-    /* padding-bottom: 15px; */
-    
-  }
-  
-  .maindiv {
-    background-color: white; 
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    display: flex;
-    justify-content: space-between;
-    padding: 20px; 
-    margin: 30px 250px;
-  }
-  
-  .leftside {
-    flex: 1; 
-    margin: 50px 60px;
-    padding: 10px 10px;
-  }
-  .leftside h2{
-    font-size: 40px;
-    font-weight: bold;
-  }
-  .leftside p{
-    font-size: 15px;
-  }
-  
-  .rightside {
-    flex: 1; 
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-  }
-  .rightside img{
-    width: 300px;
-  } 
-  
-/* built.css */
+  margin-top: 40px;
+  font-size: 30px;
+}
+
+.maindiv {
+  background-color: white; 
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  padding: 20px; 
+  margin: 30px 250px;
+}
+
+.leftside {
+  flex: 1; 
+  margin: 50px 60px;
+  padding: 10px 10px;
+}
+
+.leftside h2 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.leftside p {
+  font-size: 15px;
+}
+
+.rightside {
+  flex: 1; 
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
+
 .rightside img {
+  width: 300px;
   animation: bounce 2s ease-in-out infinite;
 }
 
 @keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
-    transform: translateY(0);
+      transform: translateY(0);
   }
   40% {
-    transform: translateY(-30px);
+      transform: translateY(-30px);
   }
   60% {
-    transform: translateY(-15px);
+      transform: translateY(-15px);
   }
 }
 
+@media (max-width: 1024px) {
+  .maindiv {
+      margin: 30px 100px;
+      padding: 20px 15px;
+  }
 
+  .leftside {
+      margin: 30px 40px;
+      padding: 10px;
+  }
 
-  @media (max-width: 768px) {
-    .maindiv {
+  .rightside img {
+      width: 280px;
+  }
+}
+
+@media (max-width: 768px) {
+  .maindiv {
       flex-direction: column; 
       margin: 40px 50px;
-    }
-  
-    .leftside{
+  }
+
+  .leftside {
       flex: 1; 
       margin: 10px 0px;
       padding: 10px 10px;
-    }
-   
-    .rightside {
+  }
+
+  .rightside {
       text-align: center; 
       margin-right: 0; 
       margin-bottom: 20px; 
-    }
   }
-  
+}
