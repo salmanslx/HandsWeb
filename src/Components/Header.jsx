@@ -29,7 +29,7 @@ function Header() {
         {location.pathname === '/' && (
           <>
             <button
-              className="navbar-toggler"
+              className="navbar-toggler bg-light"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarNav"
