@@ -12,7 +12,7 @@ function Header() {
   const handleNavLinkClick = () => {
     const navbarCollapse = document.getElementById('navbarNav');
     if (navbarCollapse.classList.contains('show')) {
-      navbarCollapse.classList.remove('show');
+      navbarCollapse.classList.remove('remove');
     }
   };
 
@@ -46,7 +46,7 @@ function Header() {
                     {language === 'en' ? 'HOME' : 'الصفحة الرئيسية'}
                   </a>
                 </li>
-                <li className="nav-item">
+                <li className="nav-item" >
                   <a className="nav-link text-light" href="#about" onClick={handleNavLinkClick}>
                     {language === 'en' ? 'ABOUT' : 'حول'}
                   </a>
@@ -100,6 +100,4 @@ function Header() {
     </nav>
   );
 }
-
 export default Header;
-
