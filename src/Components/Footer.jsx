@@ -83,7 +83,7 @@ const Footer = () => {
               <a href='#'><li className="menu-item">{language === 'ar' ? 'الرئيسية' : 'Home'}</li></a>
               <a href='#about'><li className="menu-item">{language === 'ar' ? 'حول' : 'About'}</li></a>
               <a href='#features'><li className="menu-item">{language === 'ar' ? 'الميزات' : 'Features'}</li></a>
-              <a href='#team'><li className="menu-item">{language === 'ar' ? 'الفريق' : 'Team'}</li></a>
+              {/* <a href='#team'><li className="menu-item">{language === 'ar' ? 'الفريق' : 'Team'}</li></a> */}
               <a href='#screens'><li className="menu-item">{language === 'ar' ? 'الشاشات' : 'Screens'}</li></a>
               <a href='#testimonial'><li className="menu-item">{language === 'ar' ? 'التوصيات' : 'Testimonial'}</li></a>
               <a href='#built'><li className="menu-item">{language === 'ar' ? 'المهنة' : 'Career'}</li></a>

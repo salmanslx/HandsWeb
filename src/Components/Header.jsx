@@ -29,7 +29,7 @@ function Header() {
         {location.pathname === '/' && (
           <>
             <button
-              className="navbar-toggler"
+              className="navbar-toggler bg-light"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarNav"
@@ -56,11 +56,11 @@ function Header() {
                     {language === 'en' ? 'FEATURES' : 'الميزات'}
                   </a>
                 </li>
-                <li className="nav-item">
+                {/* <li className="nav-item">
                   <a className="nav-link text-light" href="#team" onClick={handleNavLinkClick}>
                     {language === 'en' ? 'TEAM' : 'الفريق'}
                   </a>
-                </li>
+                </li> */}
                 <li className="nav-item dropdown d-inline-block">
                   <a
                     className="nav-link text-light"
@@ -88,15 +88,14 @@ function Header() {
                   </a>
                 </li>
               </ul>
-              
-            </div>
-          </>
-        )}
-        <div className="d-flex">
+              <div className="d-flex">
                 <button className="btn ms-3 dbtn p-2" onClick={toggleLanguage}>
                   {language === 'en' ? 'Arabic' : 'English'}
                 </button>
               </div>
+            </div>
+          </>
+        )}
       </div>
     </nav>
   );

@@ -4,6 +4,7 @@ import { Button } from 'react-bootstrap';
 import FormModal from '../Modals/Formmodal';
 import inf from '../Assets/influvencer.jpg';
 import { useLanguage } from '../Components/LanguageContext';
+import Footer from '../Components/Footer';
 
 const jobListings = [
   {
@@ -95,7 +96,9 @@ const Career = () => {
         </div>
         <FormModal show={showInfluencerModal} handleClose={handleCloseInfluencerModal} isInfluencerForm={true} />
       </div>
+      <Footer/>
     </div>
+    
   );
 };
 

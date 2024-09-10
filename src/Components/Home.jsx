@@ -42,7 +42,7 @@ function Home() {
       </div>
       <About />
       <Feature />
-      <Team />
+      {/* <Team /> */}
       <Built />
       <Screens />
       <Testimonial />

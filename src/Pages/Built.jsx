@@ -9,7 +9,7 @@ function Built() {
   return (
     <div id='built' className={language === 'ar' ? 'rtl' : 'ltr'}>
       <h3 className="built-title fw-bold">
-        {language === 'en' ? 'BUILD CAREER WITH HANDS' : 'بناء مسيرة مهنية مع HANDS'}
+        {language === 'en' ? 'BUILD CAREER WITH HANDS' : 'بناء مسيرة مهنية مع الأيدي'}
       </h3>
       <div className='maindiv'>
         <div className='leftside'>
