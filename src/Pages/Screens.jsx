@@ -1,6 +1,6 @@
 import React from 'react';
 import './screens.css';
-import p1 from '../Assets/p1.jpg';
+import p1 from '../Assets/p1.png';
 import p2 from '../Assets/p2.png';
 import p3 from '../Assets/p3.png';
 import p4 from '../Assets/p4.png';
@@ -18,7 +18,7 @@ function Screens() {
       <div className="slider-container">
         <div className="slider-track">
           <div className="slide">
-            <img src={p1} alt="p1" />
+            <img className='p1' src={p1} alt="p1" />
           </div>
           <div className="slide">
             <img src={p2} alt="p2" />
