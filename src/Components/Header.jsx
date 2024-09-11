@@ -100,8 +100,4 @@ function Header() {
     </nav>
   );
 }
-<<<<<<< HEAD
 export default Header;
-=======
-export default Header;
->>>>>>> 0ccbac46c40ffdf0d33978bd3397caca83b8355e
