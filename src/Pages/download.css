@@ -1,5 +1,4 @@
 
-
 .download-container {
   display: flex;
   align-items: flex-start;
@@ -94,7 +93,7 @@
   }
 
   .image-container {
-    width: 35%;
+    width: 32%;
   }
 }
 

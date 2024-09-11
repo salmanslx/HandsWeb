@@ -1,6 +1,6 @@
 import React from 'react';
 import './screens.css';
-import p1 from '../Assets/p1.png';
+import p1 from '../Assets/p1.jpg';
 import p2 from '../Assets/p2.png';
 import p3 from '../Assets/p3.png';
 import p4 from '../Assets/p4.png';
@@ -41,6 +41,12 @@ function Screens() {
           </div>
           <div className="slide">
             <img src={p3} alt="p3" />
+          </div>
+          <div className="slide">
+            <img src={p4} alt="p4" />
+          </div>
+          <div className="slide">
+            <img src={p5} alt="p5" />
           </div>
         </div>
       </div>
