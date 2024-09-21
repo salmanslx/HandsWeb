@@ -74,7 +74,7 @@ function Header() {
                   </a>
                   <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                     <li><a className="dropdown-item" href="#screens">{language === 'en' ? 'Screens' : 'الشاشات'}</a></li>
-                    <li><a className="dropdown-item" href="#testimonial">{language === 'en' ? 'Testimonial' : 'الشهادات'}</a></li>
+                    {/* <li><a className="dropdown-item" href="#testimonial">{language === 'en' ? 'Testimonial' : 'الشهادات'}</a></li> */}
                   </ul>
                 </li>
                 <li className="nav-item">

@@ -45,7 +45,7 @@ function Home() {
       {/* <Team /> */}
       <Built />
       <Screens />
-      <Testimonial />
+      {/* <Testimonial /> */}
       <Download />
       <Contact />
       <Footer />

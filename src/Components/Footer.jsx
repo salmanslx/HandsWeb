@@ -106,7 +106,7 @@ const Footer = () => {
               {language === 'ar' ? 'شارع الرباط، أبو ظبي' : 'Rabat street, Abu Dhabi'}
             </p>
             <p className="address">
-              {language === 'ar' ? '+3255 456 789' : '+3255 456 789'}<br />
+              {/* {language === 'ar' ? '+3255 456 789' : '+3255 456 789'}<br /> */}
               <a href="mailto:info@handsappuae.com" className="text-light">info@handsappuae.com</a>
             </p>
             {/* Email Subscription Form */}
