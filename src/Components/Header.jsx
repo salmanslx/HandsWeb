@@ -1,5 +1,5 @@
 import React from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation, Link } from 'react-router-dom'; // Import Link from react-router-dom
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './header.css';
 import Logo from '../Assets/logo (1).png';
@@ -17,14 +17,14 @@ function Header() {
   };
 
   return (
-    <nav className="navbar navbar-expand-lg rounded-3 shadow-sm">
+    <nav className="navbar navbar-expand-lg shadow-sm">
       <div className="container-fluid">
-        <a className="navbar-brand d-flex align-items-center" href="/">
+        <Link className="navbar-brand d-flex align-items-center" to="/">
           <img src={Logo} alt="Logo" className="logo-img me-2" />
           <span className="hands-app text-white rounded-3 p-2">
             {language === 'en' ? 'HANDS' : 'الأيدي'}
           </span>
-        </a>
+        </Link>
 
         {location.pathname === '/' && (
           <>
@@ -42,11 +42,11 @@ function Header() {
             <div className="collapse navbar-collapse" id="navbarNav">
               <ul className="navbar-nav mx-auto">
                 <li className="nav-item">
-                  <a className="nav-link text-light" href="#" onClick={handleNavLinkClick}>
+                  <a className="nav-link text-light" href="#home" onClick={handleNavLinkClick}>
                     {language === 'en' ? 'HOME' : 'الصفحة الرئيسية'}
                   </a>
                 </li>
-                <li className="nav-item" >
+                <li className="nav-item">
                   <a className="nav-link text-light" href="#about" onClick={handleNavLinkClick}>
                     {language === 'en' ? 'ABOUT' : 'حول'}
                   </a>
@@ -56,11 +56,6 @@ function Header() {
                     {language === 'en' ? 'FEATURES' : 'الميزات'}
                   </a>
                 </li>
-                {/* <li className="nav-item">
-                  <a className="nav-link text-light" href="#team" onClick={handleNavLinkClick}>
-                    {language === 'en' ? 'TEAM' : 'الفريق'}
-                  </a>
-                </li> */}
                 <li className="nav-item dropdown d-inline-block">
                   <a
                     className="nav-link text-light"
@@ -73,8 +68,11 @@ function Header() {
                     {language === 'en' ? 'PAGES' : 'الصفحات'}
                   </a>
                   <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a className="dropdown-item" href="#screens">{language === 'en' ? 'Screens' : 'الشاشات'}</a></li>
-                    {/* <li><a className="dropdown-item" href="#testimonial">{language === 'en' ? 'Testimonial' : 'الشهادات'}</a></li> */}
+                    <li>
+                      <a className="dropdown-item" href="#screens" onClick={handleNavLinkClick}>
+                        {language === 'en' ? 'Screens' : 'الشاشات'}
+                      </a>
+                    </li>
                   </ul>
                 </li>
                 <li className="nav-item">
@@ -100,4 +98,5 @@ function Header() {
     </nav>
   );
 }
-export default Header;
+
+export default Header; 

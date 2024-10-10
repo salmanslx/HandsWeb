@@ -5,6 +5,7 @@ import FormModal from '../Modals/Formmodal';
 import inf from '../Assets/influvencer.jpg';
 import { useLanguage } from '../Components/LanguageContext';
 import Footer from '../Components/Footer';
+import Preloader from '../Components/Preloader';
 
 const jobListings = [
   {
@@ -38,6 +39,7 @@ const Career = () => {
 
   return (
     <div className='career'>
+       <Preloader />
       {/* <Header /> */}
       <div className="careers-container">
         <h1 className='d-flex justify-content-center'>
@@ -60,8 +62,8 @@ const Career = () => {
               </div>
               {openJobIndex === index && (
                 <div className="accordion-content">
-                  <p className='text-dark'><strong>{language === 'en' ? 'Location:' : 'الموقع:'}</strong> {language === 'en' ? job.location : translateJobLocation(job.location)}</p>
-                  <p className='text-dark'>{language === 'en' ? job.description : translateJobDescription(job.description)}</p>
+                  <p className='text'><strong>{language === 'en' ? 'Location:' : 'الموقع:'}</strong> {language === 'en' ? job.location : translateJobLocation(job.location)}</p>
+                  <p className='text'>{language === 'en' ? job.description : translateJobDescription(job.description)}</p>
                   <Button className="apply-btn" onClick={handleShowJobModal}>
                     {language === 'en' ? 'Apply Now' : 'قدم الآن'}
                   </Button>
@@ -76,10 +78,10 @@ const Career = () => {
         <div className="container mt-5">
           <div className="row">
             <div className="col-8">
-              <h4 className='mt-5 text-dark'>
+              <h3 className='mt-5 text-dark'>
                 {language === 'en' ? 'We’re always on the lookout for Creative Influencers!' : 'نحن دائماً في بحث عن مؤثرين مبدعين!'}
-              </h4>
-              <p className='text-secondary'>
+              </h3>
+              <p>
                 {language === 'en' ? 
                   'HANDS is more than just an app; it’s a movement. We’re looking for influencers who share our passion for helping people and want to be part of something bigger.' : 
                   'الأيدي هو أكثر من مجرد تطبيق؛ إنه حركة. نحن نبحث عن مؤثرين يشاركونا شغفنا بمساعدة الناس ويرغبون في أن يكونوا جزءاً من شيء أكبر.'

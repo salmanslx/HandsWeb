@@ -1,17 +1,15 @@
 
-
-
 .container-ab {
   display: flex;
   align-items: flex-start;
   padding: 20px;
   border-radius: 10px;
   margin: 10px auto;
-  max-width: 800px;
+  max-width: 90%;
   overflow-y: hidden;
-  color: white;
-}
+  background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
 
+}
 
 .title-ab {
   font-size: 36px;
@@ -30,10 +28,10 @@
 
 .stat {
   font-size: 15px;
-  background-color: hsla(0, 16%, 93%, 0.3);
   justify-content: space-between;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+  background-color: hsla(0, 0%, 47%, 0.3);
+  box-shadow: 0 4px 8px rgba(19, 19, 19, 0.1);
   padding: 50px;
   margin-right: 20px;
 }
@@ -44,6 +42,7 @@
   margin-left: 20px;
   height: auto;
   animation: slideInFromLeft 5s ease-out forwards;
+  
 }
 
 
@@ -114,10 +113,9 @@
   }
   .stat {
     font-size: 15px;
-    background-color: hsla(0, 16%, 93%, 0.3);
-    justify-content: space-between;
+    background-color: hsla(0, 0%, 47%, 0.3);
+    box-shadow: 0 4px 8px rgba(19, 19, 19, 0.1);    justify-content: space-between;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
     padding: 10px;
     margin-right: 20px;
   }
@@ -132,10 +130,10 @@
   }
   .stat {
     font-size: 15px;
-    background-color: hsla(0, 16%, 93%, 0.3);
-    justify-content: space-between;
+    background-color: hsla(0, 0%, 47%, 0.3);
+    box-shadow: 0 4px 8px rgba(19, 19, 19, 0.1);
+        justify-content: space-between;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
     padding: 10px;
     margin-right: 20px;
   }

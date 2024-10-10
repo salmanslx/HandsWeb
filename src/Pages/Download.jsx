@@ -21,7 +21,7 @@ function Download() {
           )}
         </h1><br />
         <div className="button-container">
-          <a className="btn dbtn p-2" href="#">
+          <a className="btn dbtn p-2 me-3" href="#">
             <i className="fa-brands fa-apple pe-2 fa-lg"></i>
             {language === 'en' ? 'App Store' : 'متجر التطبيقات'}
           </a>

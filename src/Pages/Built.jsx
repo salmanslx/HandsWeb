@@ -18,8 +18,8 @@ function Built() {
           </h2>
           <p>
             {language === 'en'
-              ? 'We’re looking for dedicated and innovative minds to join us on this journey. If you’re driven by purpose and want to make a difference, HANDS is the place for you.😉'
-              : 'نحن نبحث عن عقول مكرسة ومبتكرة للانضمام إلينا في هذه الرحلة. إذا كنت مدفوعاً بالهدف وترغب في إحداث فرق، فإن الأيدي هو المكان المناسب لك.😉'}
+              ? 'We’re looking for dedicated and innovative minds to join us on this journey. If you’re driven by purpose and want to make a difference, HANDS is the place for you.'
+              : 'نحن نبحث عن عقول مكرسة ومبتكرة للانضمام إلينا في هذه الرحلة. إذا كنت مدفوعاً بالهدف وترغب في إحداث فرق، فإن الأيدي هو المكان المناسب لك.'}
           </p>
           <div className="d-flex">
             <a className="btn dbtn p-2" href="/career">

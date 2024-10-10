@@ -35,8 +35,8 @@ function About() {
           </div>
         </div>
       </div>
-      <div className={`left-section-ab mt-3 ${language === 'ar' ? 'text-start' : 'text-end'}`}>
-        <img className="image-ab" src={image} alt="App Screenshot" />
+      <div className={`left-section-ab p-3  ${language === 'ar' ? 'text-start' : 'text-end'}`}>
+        <img className="image-ab " src={image} alt="App Screenshot" />
       </div>
     </div>
   );

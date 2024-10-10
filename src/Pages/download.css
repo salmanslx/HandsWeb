@@ -13,8 +13,8 @@
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 40px;
-  background-color: white;
-  position: relative;
+  background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+    position: relative;
   z-index: 1;
   width: 100%;
 }

@@ -1,12 +1,13 @@
 @import url(//fonts.googleapis.com/css?family=Montserrat:300,400,500);
-
+.contact{
+  margin: 0px 10%;
+}
 .contact3 {
   font-family: "Montserrat", sans-serif;
-  background-color: #000c2c;
+  background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
   font-weight: 200;
-  padding: 20px;
+  padding: 0px 20px;
   width: 100%;
-  max-width: 900px;
   border-radius: 10px;
   margin: 0 auto; /* Center the container */
 }

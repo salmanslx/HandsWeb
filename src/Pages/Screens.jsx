@@ -1,55 +1,47 @@
 import React from 'react';
-import './screens.css';
+import Slider from 'react-slick';
+import './screens.css'; // Your custom CSS
 import p1 from '../Assets/p1.png';
 import p2 from '../Assets/p2.png';
 import p3 from '../Assets/p3.png';
 import p4 from '../Assets/p4.png';
 import p5 from '../Assets/p5.png';
-import { useLanguage } from '../Components/LanguageContext';
 
 function Screens() {
-  const { language } = useLanguage();
+  const images = [p1, p2, p3, p4, p5];
+
+  const settings = {
+    centerMode: true,
+    centerPadding: '0',
+    slidesToShow: 4,
+    speed: 1000,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 1800,
+    pauseOnHover: true,
+    focusOnSelect: true,
+    responsive: [
+      {
+        breakpoint: 768, // For mobile view
+        settings: {
+          slidesToShow: 1,
+        }
+      }
+    ]
+  };
 
   return (
-    <div className={`mainscrn ${language === 'ar' ? 'rtl' : ''}`} id='screens'>
-      <h2 className="fw-bold d-flex justify-content-center mt-5">
-        {language === 'ar' ? 'واجهات جميلة' : 'BEAUTIFUL INTERFACES'}
+    <div className="screens-container" id='screens'>
+      <h2 className="fw-bold d-flex justify-content-center align-items-center">
+        BEAUTIFUL INTERFACES
       </h2>
-      <div className="slider-container">
-        <div className="slider-track">
-          <div className="slide">
-            <img className='p1' src={p1} alt="p1" />
+      <Slider {...settings}>
+        {images.map((image, index) => (
+          <div key={index} className="slide">
+            <img src={image} alt={`p${index + 1}`} className="carousel-image" />
           </div>
-          <div className="slide">
-            <img src={p2} alt="p2" />
-          </div>
-          <div className="slide">
-            <img src={p3} alt="p3" />
-          </div>
-          <div className="slide">
-            <img src={p4} alt="p4" />
-          </div>
-          <div className="slide">
-            <img src={p5} alt="p5" />
-          </div>
-          {/* Duplicate slides to create infinite looping */}
-          <div className="slide">
-            <img src={p1} alt="p1" />
-          </div>
-          <div className="slide">
-            <img src={p2} alt="p2" />
-          </div>
-          <div className="slide">
-            <img src={p3} alt="p3" />
-          </div>
-          <div className="slide">
-            <img src={p4} alt="p4" />
-          </div>
-          <div className="slide">
-            <img src={p5} alt="p5" />
-          </div>
-        </div>
-      </div>
+        ))}
+      </Slider>
     </div>
   );
 }

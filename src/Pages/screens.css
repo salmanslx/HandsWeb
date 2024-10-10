@@ -1,40 +1,68 @@
-.mainscrn {
+/* screens.css */
+.screens-container {
   width: 100%;
-  overflow: hidden;
-  position: relative;
+  max-width: 1200px;
+  margin: 100px auto;
+  padding: 0 0px; /* Added padding for smaller screens */
 }
 
-.slider-container {
-  width: 100%;
-  overflow: hidden;
+.slick-slide {
+  transform: scale(0.8);
+  transition: transform 0.3s ease;
   display: flex;
   justify-content: center;
 }
 
-.slider-track {
+.slick-center .slick-slide {
+  transform: scale(1); /* The center image will be scaled larger */
+}
+
+/* Centering styles */
+.slick-list {
   display: flex;
-  animation: scroll 20s linear infinite;
+  justify-content: center; /* Centering the entire list */
+  overflow: hidden; /* Hides excess slides */
 }
 
-.slide {
-  min-width: 25%; /* Show 4 images at a time */
-  transition: transform 0.5s ease;
-}
-
-.slide img {
-  padding: 50px;
+.carousel-image {
   width: 100%;
-  border-radius: 75px;
+  height: auto;
+  border-radius: 10px;
 }
 
-/* Animation */
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
+/* Arrow color */
+.slick-prev:before,
+.slick-next:before {
+  color: rgb(255, 249, 249); /* Arrow color */
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .carousel-image {
+    max-width: 80%; /* Adjust max width for tablet screens */
   }
 }
 
+@media (max-width: 768px) {
+  .screens-container {
+    padding: 0 10px; /* Reduced padding for mobile screens */
+  }
 
+  .slick-slide {
+    transform: scale(0.9); /* Slightly larger scale for mobile */
+  }
+
+  .carousel-image {
+    max-width: 90%; /* Adjust max width for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .slick-slide {
+    transform: scale(0.85); /* Adjust scale for extra small screens */
+  }
+
+  .carousel-image {
+    max-width: 100%; /* Allow full width for images on extra small screens */
+  }
+}
