@@ -1,4 +1,4 @@
-/* Preloader styles */
+Preloader styles
 #preloader {
     position: fixed;
     top: 0;
@@ -30,7 +30,6 @@
     }
   }
   
-  /* Hide preloader after content loads */
   body.loaded #preloader {
     display: none;
   }

@@ -5,7 +5,6 @@ import FormModal from '../Modals/Formmodal';
 import inf from '../Assets/influvencer.jpg';
 import { useLanguage } from '../Components/LanguageContext';
 import Footer from '../Components/Footer';
-import Preloader from '../Components/Preloader';
 
 const jobListings = [
   {
@@ -39,7 +38,7 @@ const Career = () => {
 
   return (
     <div className='career'>
-       <Preloader />
+       
       {/* <Header /> */}
       <div className="careers-container">
       <h1 className='d-flex justify-content-center'>
