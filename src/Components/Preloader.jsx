@@ -8,7 +8,7 @@ const Preloader = () => {
         // Set a delay before removing the preloader
         setTimeout(() => {
           document.body.classList.add('loaded');
-        }, 1000); // Change 5000 to your desired time in milliseconds (5 seconds)
+        }, 100); // Change 5000 to your desired time in milliseconds (5 seconds)
       };
   
       window.addEventListener('load', handleLoad);

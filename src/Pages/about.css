@@ -5,8 +5,9 @@
   padding: 20px;
   border-radius: 10px;
   margin: 10px auto;
-  max-width: 90%;
+  max-width: 80%;
   overflow-y: hidden;
+  font-weight: 500;
   background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
 
 }

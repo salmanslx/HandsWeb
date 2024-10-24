@@ -28,16 +28,17 @@ function Home() {
                 'To empower individuals within the UAE community by facilitating connections, fostering mutual support, and promoting a culture of kindness and collaboration through our innovative platform.' : 
                 'تمكين الأفراد ضمن مجتمع الإمارات من خلال تسهيل الروابط وتعزيز الدعم المتبادل وتعزيز ثقافة اللطف والتعاون من خلال منصتنا المبتكرة.'}
             </p>
-            <div className="button-container">
-          <a className="btn dbtn p-2 me-3" href="#">
-            <i className="fa-brands fa-apple pe-2 fa-lg"></i>
-            {language === 'en' ? 'App Store' : 'متجر التطبيقات'}
-          </a>
-          <a className="btn dbtn p-2" href="#">
-            <i className="fa-brands fa-google-play pe-2"></i>
-            {language === 'en' ? 'Google Play' : 'جوجل بلاي'}
-          </a>
-        </div>
+            <div className="button-container d-flex align-items-center">
+  <a className="btn0 p-2" href="https://apps.apple.com/in/app/hands-uae/id6502349509">
+    <i className="fa-brands fa-apple pe-2 fa-lg"></i>
+    {language === 'en' ? 'App Store' : 'متجر التطبيقات'}
+  </a>
+  <a className="btn0 p-2" href="https://play.google.com/store/apps/details?id=com.handsappuae.user&pcampaignid=web_share">
+    <i className="fa-brands fa-google-play pe-2"></i>
+    {language === 'en' ? 'Google Play' : 'جوجل بلاي'}
+  </a>
+</div>
+
           </div>
           <div className='imgcon mt-5 justify-content-center'>
             <img src={scrns} alt="Screenshots of the Hands app showing its features." /> {/* Improved alt text */}

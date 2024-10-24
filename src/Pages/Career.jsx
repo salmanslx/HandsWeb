@@ -42,9 +42,17 @@ const Career = () => {
        <Preloader />
       {/* <Header /> */}
       <div className="careers-container">
-        <h1 className='d-flex justify-content-center'>
-          {language === 'en' ? 'Join the HANDS Team' : 'انضم إلى فريق الأيدي'}
-        </h1>
+      <h1 className='d-flex justify-content-center'>
+  {language === 'en' ? (
+    <>
+      Join the  <span className="team-red"> HANDS </span>Family
+    </>
+  ) : (
+    <>
+      انضم إلى  <span className="team-red">الأيدي</span>عائلة </>
+  )}
+</h1>
+
         <p>
           {language === 'en' ? 
             'At HANDS, we believe in creating a work environment that fosters creativity, collaboration, and growth. Our team is our greatest asset, and we’re always on the lookout for passionate, innovative individuals who are eager to make a difference.' : 

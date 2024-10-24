@@ -56,25 +56,12 @@ function Header() {
                     {language === 'en' ? 'FEATURES' : 'الميزات'}
                   </a>
                 </li>
-                <li className="nav-item dropdown d-inline-block">
-                  <a
-                    className="nav-link text-light"
-                    href="#"
-                    id="navbarDropdown"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    {language === 'en' ? 'PAGES' : 'الصفحات'}
+                <li className="nav-item">
+                  <a className="nav-link text-light" href="#screens" onClick={handleNavLinkClick}>
+                  {language === 'en' ? 'SCREENS' : 'الشاشات'}
                   </a>
-                  <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li>
-                      <a className="dropdown-item" href="#screens" onClick={handleNavLinkClick}>
-                        {language === 'en' ? 'Screens' : 'الشاشات'}
-                      </a>
-                    </li>
-                  </ul>
                 </li>
+                
                 <li className="nav-item">
                   <a className="nav-link text-light" href="#built" onClick={handleNavLinkClick}>
                     {language === 'en' ? 'CAREER' : 'المسيرة المهنية'}

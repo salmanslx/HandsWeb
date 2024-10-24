@@ -8,12 +8,12 @@ export default function App() {
 
   return (
     <div className='contact d-flex justify-content-center align-items-center mt-5 mb-5' id='contact'>
-      <div className="contact3 py-5">
+      <div className="contact3 py-3">
         <div className="row no-gutters">
           <div className="container">
             <div className="row">
               <div className="col-lg-6">
-                <div className="card-shadow mt-5">
+                <div className="card-shadow d-flex justify-content-center align-items-center mt-5">
                   <img
                     src={cnct}
                     className="img-fluid rounded w-75"
@@ -23,13 +23,13 @@ export default function App() {
               </div>
               <div className="col-lg-6">
                 <div className="contact-box ml-3">
-                  <h1 className="font-weight-dark text-light mt-2">
+                  <h1 className="font-weight-dark text-light">
                     {language === 'en' ? 'Get In Touch' : 'اتصل بنا'}
                   </h1>
                   <form className="mt-4">
                     <div className="row">
                       <div className="col-lg-12">
-                        <div className="form-group mt-2">
+                        <div className="form-group">
                           
                           <input
                             className="form-control"
@@ -40,7 +40,7 @@ export default function App() {
                         </div>
                       </div>
                       <div className="col-lg-12">
-                        <div className="form-group mt-2">
+                        <div className="form-group">
                           
                           <input
                             className="form-control"
@@ -51,7 +51,7 @@ export default function App() {
                         </div>
                       </div>
                       <div className="col-lg-12">
-                        <div className="form-group mt-2">
+                        <div className="form-group">
                           
                           <input
                             className="form-control"
@@ -62,7 +62,7 @@ export default function App() {
                         </div>
                       </div>
                       <div className="col-lg-12">
-                        <div className="form-group mt-2">
+                        <div className="form-group">
                           
                           <textarea
                             className="form-control"

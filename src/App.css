@@ -1,6 +1,6 @@
 
 .background-container {
-  background-image: linear-gradient(-225deg, #69EACB 0%, #EACCF8 48%, #6654F1 100%);
+  background-image: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%);  
   height: 100vh;  
   font-family: "Cabin", sans-serif;
   overflow-x: hidden;

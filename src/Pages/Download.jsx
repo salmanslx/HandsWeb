@@ -21,11 +21,11 @@ function Download() {
           )}
         </h1><br />
         <div className="button-container">
-          <a className="btn dbtn p-2 me-3" href="#">
+          <a className="btn dbtn p-2 me-3" href="https://apps.apple.com/in/app/hands-uae/id6502349509">
             <i className="fa-brands fa-apple pe-2 fa-lg"></i>
             {language === 'en' ? 'App Store' : 'متجر التطبيقات'}
           </a>
-          <a className="btn dbtn p-2" href="#">
+          <a className="btn dbtn p-2" href="https://play.google.com/store/apps/details?id=com.handsappuae.user&pcampaignid=web_share">
             <i className="fa-brands fa-google-play pe-2"></i>
             {language === 'en' ? 'Google Play' : 'متجر جوجل بلاي'}
           </a>

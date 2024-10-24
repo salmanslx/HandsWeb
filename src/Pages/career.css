@@ -2,9 +2,14 @@
   direction: rtl;
 }
 
+.team-red {
+  color: #991717;
+  padding: 0px 5px 0px 5px;
+}
+
 
 .career {
-  background-image: linear-gradient(-225deg, #69EACB 0%, #EACCF8 48%, #6654F1 100%);
+  background-image: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%);  
 
 }
 
@@ -86,6 +91,9 @@
   transform: scale(1.05);
   box-shadow: 5px 10px 15px #000c2c;
   background: #faf9f6
+}
+p{
+  font-weight: 500;
 }
 
 /* Responsive Styles */
