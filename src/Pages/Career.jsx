@@ -38,7 +38,6 @@ const Career = () => {
 
   return (
     <div className='career'>
-       
       {/* <Header /> */}
       <div className="careers-container">
       <h1 className='d-flex justify-content-center'>
